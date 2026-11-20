@@ -1,0 +1,99 @@
+Etica de la Inteligencia Artificial
+
+1. Introduccion
+
+La inteligencia artificial no es una tecnologia neutral. Los sistemas de IA toman decisiones que afectan la vida de las personas: quien obtiene un prestamo, quien es seleccionado para un empleo, que contenido ve cada usuario en redes sociales, o como se asignan recursos sanitarios. Estas decisiones reflejan los valores, sesgos y prioridades de quienes disenan, entrenan y despliegan estos sistemas.
+
+La etica de la IA no es un complemento opcional ni un obstaculo para la innovacion. Es una condicion necesaria para que la tecnologia beneficie a la sociedad en su conjunto. Este texto presenta los principales desafios eticos de la IA y los marcos de referencia que buscan abordarlos.
+
+2. Sesgo algoritmico
+
+Los modelos de IA aprenden de datos historicos, y los datos historicos reflejan desigualdades sociales existentes. Si un sistema de contratacion se entrena con datos de las ultimas decadas, donde ciertos perfiles demograficos estaban sobrerrepresentados en puestos directivos, el modelo puede aprender a discriminar a candidatos de grupos subrepresentados.
+
+Casos documentados:
+
+- En 2018 se revelo que un sistema de reclutamiento basado en IA penalizaba curriculos que contenian la palabra "femenino" o el nombre de universidades exclusivamente de mujeres.
+- Sistemas de reconocimiento facial han mostrado tasas de error significativamente mayores para personas de piel oscura, especialmente mujeres.
+- Algoritmos de prediccion de reincidencia criminal en Estados Unidos asignaron sistematicamente puntuaciones de riesgo mas altas a personas negras que a personas blancas con perfiles delictivos similares.
+
+El sesgo puede introducirse en multiples etapas: en la recogida de datos (quien esta representado y quien no), en el etiquetado (quien decide que es "correcto"), en el diseno del modelo (que variables se incluyen) y en la evaluacion (que metricas se priorizan).
+
+3. Transparencia y explicabilidad
+
+Los modelos de aprendizaje profundo moderno son cajas negras: pueden contener miles de millones de parametros y producir resultados altamente precisos, pero resulta extremadamente dificil explicar por que toman una decision concreta.
+
+Esta opacidad plantea problemas graves cuando la IA se usa en contextos con consecuencias significativas para las personas. Un paciente tiene derecho a saber por que un sistema recomienda un tratamiento. Un ciudadano tiene derecho a entender por que un algoritmo deniega su solicitud de prestacion social.
+
+La explicabilidad (XAI, Explainable AI) busca desarrollar tecnicas que hagan comprensibles las decisiones de los modelos. Metodos como SHAP, LIME o los mapas de atencion permiten identificar que factores influyeron mas en una prediccion, aunque todavia distan de ofrecer explicaciones completas y fiables.
+
+4. Privacidad
+
+Los modelos de IA requieren grandes cantidades de datos para su entrenamiento. Estos datos incluyen a menudo informacion personal: textos escritos por personas reales, imagenes de sus rostros, registros medicos, historiales de navegacion.
+
+Cuestiones fundamentales:
+
+- Consentimiento: las personas cuyos datos se usan para entrenar modelos rara vez son informadas o dan consentimiento explicito.
+- Anonimizacion: se ha demostrado repetidamente que la anonimizacion de datos es mucho mas fragil de lo que se creia. Con suficiente informacion contextual, es posible reidentificar a individuos en conjuntos de datos supuestamente anonimizados.
+- Memorizacion: los modelos de lenguaje pueden memorizar y reproducir fragmentos exactos de sus datos de entrenamiento, incluyendo informacion personal.
+- Extraccion: mediante tecnicas adversariales, es posible extraer informacion personal de modelos entrenados, incluso cuando los desarrolladores no pretendian que fuera accesible.
+
+5. Automatizacion y empleo
+
+La IA tiene el potencial de automatizar tareas que antes requerian capacidades cognitivas humanas. Esto genera preocupacion sobre el desplazamiento laboral, especialmente en sectores como la atencion al cliente, la traduccion, la contabilidad, la conduccion o el analisis de datos.
+
+Sin embargo, el impacto real es complejo. La tecnologia tambien crea nuevos empleos, modifica los existentes y puede aumentar la productividad de los trabajadores. La historia de la tecnologia muestra que las transiciones laborales son posibles pero dolorosas si no se acompanan de politicas adecuadas de formacion, proteccion social y redistribucion.
+
+El debate no deberia reducirse a "la IA quitara empleos" sino a preguntas mas concretas: que empleos, para quien, con que velocidad, y que medidas deben tomarse para que la transicion sea justa.
+
+6. Armas autonomas
+
+Los sistemas de armas letales autonomas (LAWS) son armas capaces de seleccionar y atacar objetivos sin intervencion humana directa. Drones militares con creciente autonomia ya se han desplegado en conflictos reales.
+
+Las objeciones eticas son multiples:
+
+- Responsabilidad: si un arma autonoma causa victimas civiles, quien es responsable? El programador, el comandante, el fabricante?
+- Umbral de conflicto: la automatizacion del combate podria reducir el coste politico de la guerra, haciendo mas probable su inicio.
+- Dignidad humana: muchos argumentan que la decision de quitar una vida humana no deberia delegarse nunca a una maquina.
+
+La ONU debate desde 2017 sobre la regulacion de las armas autonomas, pero el progreso ha sido lento debido a la oposicion de las principales potencias militares.
+
+7. Desinformacion y deepfakes
+
+La IA generativa permite crear contenido sintetico altamente realista: imagenes, videos y audios de personas que nunca existieron, o de personas reales haciendo o diciendo cosas que nunca hicieron.
+
+Los riesgos incluyen:
+
+- Manipulacion politica: videos falsos de candidatos politicos pueden difundirse en periodos electorales.
+- Dano reputacional: la pornografia deepfake no consentida afecta desproporcionadamente a mujeres.
+- Erosion de la confianza: si cualquier contenido puede ser falso, la propia nocion de evidencia audiovisual se debilita.
+
+Las herramientas de deteccion de deepfakes existen, pero la carrera entre generacion y deteccion favorece sistematicamente a la generacion.
+
+8. El Reglamento Europeo de IA (AI Act)
+
+La Union Europea aprobo en 2024 el AI Act, la primera legislacion integral sobre inteligencia artificial del mundo. El reglamento adopta un enfoque basado en el riesgo:
+
+- Riesgo inaceptable (prohibido): puntuacion social de ciudadanos, manipulacion subliminal, reconocimiento facial masivo en tiempo real en espacios publicos (con excepciones limitadas para seguridad).
+- Alto riesgo: sistemas usados en empleo, educacion, migracion, justicia, infraestructura critica. Requieren evaluaciones de conformidad, documentacion, supervision humana y transparencia.
+- Riesgo limitado: chatbots y sistemas de generacion de contenido. Deben informar al usuario de que interactua con una IA.
+- Riesgo minimo: sin restricciones adicionales. Incluye la mayoria de aplicaciones de IA (filtros de spam, videojuegos, etc.).
+
+El reglamento aplica a cualquier sistema de IA que opere en la UE, independientemente de donde se haya desarrollado.
+
+9. Principios de IA responsable
+
+Diversas organizaciones han propuesto marcos de principios para guiar el desarrollo responsable de la IA. Los principios mas recurrentes son:
+
+- Justicia (fairness): los sistemas no deben discriminar por razon de genero, raza, edad u otras caracteristicas protegidas.
+- Transparencia: los usuarios deben saber cuando interactuan con una IA y poder entender, en terminos razonables, como funciona.
+- Privacidad: los datos personales deben protegerse y usarse de forma proporcional al proposito del sistema.
+- Seguridad: los sistemas deben ser robustos, fiables y resistentes a ataques adversariales.
+- Responsabilidad (accountability): debe haber personas y organizaciones responsables del comportamiento de los sistemas de IA.
+- Beneficencia: la IA debe disenarse para beneficiar a las personas y a la sociedad.
+- Autonomia humana: la IA debe aumentar la capacidad de decision humana, no sustituirla en contextos donde la agencia humana es fundamental.
+
+10. Reflexion final
+
+La etica de la IA no tiene respuestas simples. Cada aplicacion requiere evaluar riesgos y beneficios en su contexto especifico. Lo que si es claro es que los desarrolladores de IA tienen una responsabilidad que va mas alla del rendimiento tecnico: construir sistemas que funcionen no solo correctamente, sino justamente.
+
+Como futuros profesionales, entender estas cuestiones no es solo una obligacion academica sino una competencia esencial. Las decisiones tecnicas que tomamos hoy determinaran como la IA moldea la sociedad de manana.

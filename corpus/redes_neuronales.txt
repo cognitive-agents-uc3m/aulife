@@ -1,0 +1,87 @@
+Redes Neuronales Artificiales
+
+1. Inspiracion biologica
+
+El cerebro humano contiene aproximadamente 86 mil millones de neuronas, cada una conectada a miles de otras mediante sinapsis. Una neurona recibe senales electricas a traves de sus dendritas, las integra en el cuerpo celular y, si la estimulacion supera un umbral, genera un impulso electrico que se transmite por el axon hacia las neuronas siguientes. Este mecanismo sencillo, repetido miles de millones de veces en paralelo, produce la cognicion, la percepcion y el aprendizaje.
+
+Las redes neuronales artificiales se inspiran (de forma simplificada) en este principio: unidades simples de procesamiento, conectadas entre si, que colectivamente pueden aprender patrones complejos a partir de datos.
+
+2. El perceptron
+
+En 1958, Frank Rosenblatt propuso el perceptron, la unidad fundamental de las redes neuronales. Un perceptron recibe varias entradas numericas (x1, x2, ..., xn), las multiplica por pesos (w1, w2, ..., wn), suma los resultados, anade un sesgo (bias) y aplica una funcion de activacion para producir una salida.
+
+Matematicamente: salida = f(w1*x1 + w2*x2 + ... + wn*xn + b)
+
+Un perceptron individual puede aprender a clasificar datos que son linealmente separables. Sin embargo, Minsky y Papert demostraron en 1969 que un perceptron simple no puede resolver problemas no lineales como la funcion XOR, lo que freno temporalmente la investigacion en redes neuronales.
+
+3. Redes multicapa y retropropagacion
+
+La solucion al problema del perceptron simple fue apilar multiples capas de neuronas: una capa de entrada, una o mas capas ocultas y una capa de salida. Estas redes multicapa, tambien llamadas perceptrones multicapa (MLP), pueden aproximar cualquier funcion continua, un resultado conocido como el teorema de aproximacion universal.
+
+El desafio era como entrenar estas redes, es decir, como ajustar los miles de pesos para que la red aprenda la relacion correcta entre entradas y salidas. La respuesta llego con el algoritmo de retropropagacion (backpropagation), popularizado por Rumelhart, Hinton y Williams en 1986.
+
+El proceso de entrenamiento funciona asi:
+
+- Propagacion hacia adelante: los datos de entrada atraviesan la red capa por capa, produciendo una prediccion.
+- Calculo del error: se compara la prediccion con el valor real usando una funcion de perdida (loss function).
+- Retropropagacion: el error se propaga hacia atras a traves de la red, calculando cuanto contribuye cada peso al error total mediante la regla de la cadena del calculo diferencial.
+- Actualizacion de pesos: cada peso se ajusta proporcionalmente a su contribucion al error, multiplicado por un factor llamado tasa de aprendizaje (learning rate).
+
+Este ciclo se repite miles o millones de veces sobre los datos de entrenamiento. Cada pasada completa por el conjunto de datos se llama una epoca (epoch). Los datos se procesan en lotes (batches) para hacer el entrenamiento mas eficiente.
+
+4. Funciones de activacion
+
+Las funciones de activacion introducen no linealidad en la red, lo que le permite aprender relaciones complejas. Sin ellas, una red multicapa seria equivalente a una unica transformacion lineal.
+
+Las funciones de activacion mas importantes son:
+
+- Sigmoide: comprime la salida al rango (0, 1). Historicamente popular, pero sufre del problema de desvanecimiento del gradiente en redes profundas.
+- Tanh: similar a la sigmoide, pero con rango (-1, 1). Centra los datos en cero, lo que puede acelerar la convergencia.
+- ReLU (Rectified Linear Unit): f(x) = max(0, x). Simple y eficiente, resuelve en gran medida el problema del desvanecimiento del gradiente. Es la activacion mas usada en redes profundas modernas.
+- Softmax: convierte un vector de valores en una distribucion de probabilidad. Se usa en la capa de salida para tareas de clasificacion multiclase.
+
+5. Redes neuronales convolucionales (CNN)
+
+Las redes convolucionales, propuestas por Yann LeCun a finales de los 80, estan disenadas para procesar datos con estructura espacial, como imagenes. Su idea central es la convolucion: en lugar de conectar cada neurona con todas las entradas, se aplican filtros (kernels) que se deslizan sobre la imagen detectando patrones locales como bordes, texturas y formas.
+
+Una CNN tipica tiene tres tipos de capas:
+
+- Capas convolucionales: aplican filtros para extraer caracteristicas. Las primeras capas detectan patrones simples (bordes, colores); las capas profundas combinan estos patrones en representaciones mas abstractas (ojos, caras, objetos).
+- Capas de pooling: reducen la dimension espacial, conservando las caracteristicas mas relevantes. El max pooling selecciona el valor maximo de cada region.
+- Capas completamente conectadas: al final de la red, combinan las caracteristicas extraidas para producir la clasificacion final.
+
+Las CNN revolucionaron la vision por computador. AlexNet (2012) demostro su poder en la competicion ImageNet. Arquitecturas posteriores como VGG, ResNet e Inception alcanzaron precisiones sobrehumanas en tareas de reconocimiento visual.
+
+6. Redes recurrentes (RNN) y LSTM
+
+Las redes recurrentes estan disenadas para datos secuenciales: texto, series temporales, audio. A diferencia de las redes feedforward, las RNN mantienen un estado oculto que actua como memoria, permitiendo que la informacion de pasos anteriores influya en el procesamiento del paso actual.
+
+Sin embargo, las RNN basicas sufren del problema del desvanecimiento del gradiente: al retropropagar a traves de muchos pasos temporales, los gradientes se reducen exponencialmente, impidiendo que la red aprenda dependencias a largo plazo.
+
+Las redes LSTM (Long Short-Term Memory), propuestas por Hochreiter y Schmidhuber en 1997, resolvieron este problema mediante compuertas (gates) que controlan el flujo de informacion: que recordar, que olvidar y que transmitir. Las LSTM fueron el estandar para procesamiento de texto y voz hasta la llegada de los Transformers.
+
+7. La arquitectura Transformer
+
+En 2017, Vaswani et al. publicaron "Attention Is All You Need", presentando una arquitectura que prescinde completamente de la recurrencia. El mecanismo clave es la atencion (attention): cada elemento de la secuencia puede atender directamente a cualquier otro elemento, sin importar la distancia.
+
+La autoatencion (self-attention) funciona asi: para cada palabra de la secuencia, se calculan tres vectores (Query, Key, Value). La atencion de una palabra hacia las demas se determina por la similitud entre su Query y los Keys de las demas, y el resultado es una suma ponderada de los Values.
+
+Ventajas del Transformer sobre las RNN:
+- Paralelismo: toda la secuencia se procesa simultaneamente, aprovechando mejor las GPUs.
+- Dependencias a larga distancia: la atencion conecta directamente cualquier par de posiciones.
+- Escalabilidad: el rendimiento mejora consistentemente al aumentar el tamano del modelo y los datos.
+
+Los Transformers son la base de practicamente todos los modelos de lenguaje modernos: BERT, GPT, T5, LLaMA, Gemini, Claude y muchos mas.
+
+8. Entrenamiento: conceptos clave
+
+- Sobreajuste (overfitting): cuando el modelo memoriza los datos de entrenamiento en lugar de aprender patrones generalizables. Rinde bien en entrenamiento pero mal en datos nuevos.
+- Subajuste (underfitting): cuando el modelo es demasiado simple para capturar los patrones de los datos.
+- Regularizacion: tecnicas para prevenir el sobreajuste. Incluyen el dropout (desactivar neuronas aleatoriamente durante el entrenamiento), la regularizacion L1/L2 (penalizar pesos grandes) y el early stopping (detener el entrenamiento cuando el rendimiento en validacion empieza a empeorar).
+- Conjunto de validacion: datos separados del entrenamiento usados para monitorizar el rendimiento durante el entrenamiento y ajustar hiperparametros.
+- Conjunto de test: datos reservados exclusivamente para evaluar el rendimiento final del modelo.
+- Transfer learning: usar un modelo preentrenado en una tarea general (como reconocimiento de imagenes o comprension de texto) y adaptarlo a una tarea especifica con pocos datos. Esta tecnica ha democratizado el uso de redes profundas, ya que entrenar un modelo desde cero requiere recursos enormes.
+
+9. Perspectiva actual
+
+Las redes neuronales han pasado de ser una curiosidad academica a la tecnologia central de la inteligencia artificial moderna. Los modelos fundacionales (foundation models), preentrenados en cantidades masivas de datos, se adaptan a una amplia variedad de tareas. El reto actual no es solo mejorar la precision, sino hacer los modelos mas eficientes, interpretables y accesibles.

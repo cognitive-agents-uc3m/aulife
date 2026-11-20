@@ -1,0 +1,49 @@
+Aulife 2026 -- QUICK REFERENCE
+
+CLONAR REPO:  git clone https://github.com/cognitive-agents-uc3m/aulife
+VERIFICAR:    curl https://aulife-proxy-66041181251.europe-west1.run.app/health
+
+TU CLAVE:     En el archivo .env de tu grupo (API_KEY)
+PROXY:        https://aulife-proxy-66041181251.europe-west1.run.app
+MODELOS:      gemini-3.8-flash (rápido) / gemini-4-argon (potente)
+              deepseek-v4.1-flash (código) / glm-5.2 (alternativa)
+
+METADATA OBLIGATORIO en cada petición:
+  "metadata": {"request_type": "dev"}   <-- para pruebas
+  "metadata": {"request_type": "app"}   <-- para tu aplicación final
+  Si no lo incluyes, el proxy rechaza la petición.
+
+EJEMPLO CON CURL:
+  curl -X POST https://aulife-proxy-66041181251.europe-west1.run.app/v1/chat/completions \
+    -H "Authorization: Bearer TU_CLAVE" \
+    -H "Content-Type: application/json" \
+    -d '{"model":"gemini-3.8-flash",
+         "messages":[{"role":"user","content":"Hola"}],
+         "metadata":{"request_type":"dev","tags":["dev"]}}'
+
+EJEMPLO CON PYTHON (instalar: pip install openai):
+  from openai import OpenAI
+  client = OpenAI(base_url="URL/v1", api_key="TU_CLAVE")
+  resp = client.chat.completions.create(
+      model="gemini-3.8-flash",
+      messages=[{"role":"user","content":"Hola"}],
+      extra_body={"metadata":{"request_type":"dev","tags":["dev"]}}
+  )
+  print(resp.choices[0].message.content)
+
+GIT BÁSICO:
+  git add .
+  git commit -m "descripción del cambio"
+  git push
+
+PROBLEMAS:
+  - "Connection refused"       -> Comprueba PROXY_URL en .env
+  - "Invalid API key"          -> Comprueba API_KEY en .env
+  - "Falta metadata..."        -> Añade metadata.request_type ("dev" o "app")
+  - "Rate limit exceeded"      -> Espera 30 seg y reintenta
+  - "Budget exceeded"          -> Avisa al organizador
+
+ENTREGABLES:
+  - Código funcionando (repo Git)
+  - Instrucciones de despliegue (README.md o DEPLOY.md)
+  - Write-up en writeup_plantilla.md (1-3 páginas)

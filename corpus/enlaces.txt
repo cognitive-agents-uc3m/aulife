@@ -1,0 +1,31 @@
+Recursos Educativos Abiertos sobre Inteligencia Artificial
+
+Elementos de IA (Elements of AI) - https://www.elementsofai.com/es/ - Curso introductorio gratuito sobre IA creado por la Universidad de Helsinki y MinnaLearn, disponible en espanol. Cubre conceptos basicos sin requerir conocimientos de programacion.
+
+Curso de Machine Learning de Andrew Ng (Coursera) - https://www.coursera.org/learn/machine-learning-course - Curso clasico de aprendizaje automatico de Stanford impartido por Andrew Ng. Cubre regresion, clasificacion, redes neuronales y buenas practicas.
+
+Deep Learning Specialization (Coursera) - https://www.coursera.org/specializations/deep-learning - Especializacion de cinco cursos sobre aprendizaje profundo impartida por Andrew Ng. Cubre redes neuronales, CNN, secuencias y modelos generativos.
+
+CS231n: Convolutional Neural Networks for Visual Recognition (Stanford) - https://cs231n.stanford.edu/ - Curso de Stanford sobre redes neuronales convolucionales y vision por computador. Incluye notas de clase, tareas y materiales.
+
+Curso de NLP de Hugging Face - https://huggingface.co/learn/nlp-course - Curso gratuito sobre procesamiento de lenguaje natural usando la biblioteca Transformers. Practico y actualizado, con codigo ejecutable.
+
+Practical Deep Learning for Coders (fast.ai) - https://course.fast.ai/ - Curso practico que ensena deep learning empezando por aplicaciones reales. Enfoque top-down: primero usar, luego entender la teoria.
+
+Neural Networks (3Blue1Brown) - https://www.3blue1brown.com/topics/neural-networks - Serie de videos que explica visualmente como funcionan las redes neuronales, la retropropagacion y el descenso de gradiente. Excelente para construir intuicion matematica.
+
+MIT OpenCourseWare: Introduction to Deep Learning (6.S191) - https://introtodeeplearning.com/ - Curso introductorio del MIT sobre deep learning. Incluye videos de las clases, diapositivas y laboratorios con codigo.
+
+Papers With Code - https://paperswithcode.com/ - Plataforma que vincula articulos de investigacion en IA con su implementacion en codigo. Util para explorar el estado del arte en cualquier tarea.
+
+Google Machine Learning Education - https://developers.google.com/machine-learning - Coleccion de cursos y guias de Google sobre machine learning, desde conceptos basicos hasta temas avanzados como fairness y produccion.
+
+The Illustrated Transformer (Jay Alammar) - https://jalammar.github.io/illustrated-transformer/ - Articulo con explicaciones visuales detalladas de la arquitectura Transformer. Referencia imprescindible para entender los mecanismos de atencion.
+
+Kaggle Learn - https://www.kaggle.com/learn - Minicursos gratuitos y practicos sobre Python, machine learning, deep learning, SQL y visualizacion de datos. Incluye ejercicios interactivos.
+
+Dive into Deep Learning - https://d2l.ai/ - Libro interactivo sobre deep learning con codigo ejecutable en PyTorch, TensorFlow y JAX. Cubre teoria y practica de forma rigurosa.
+
+AI for Everyone (Coursera) - https://www.coursera.org/learn/ai-for-everyone - Curso no tecnico de Andrew Ng disenado para entender que puede y que no puede hacer la IA, orientado a perfiles no programadores.
+
+LLM Visualization (Brendan Bycroft) - https://bbycroft.net/llm - Visualizacion interactiva en 3D de como funciona un modelo de lenguaje, desde los tokens de entrada hasta la prediccion de salida. Excelente para entender la arquitectura Transformer de forma intuitiva.

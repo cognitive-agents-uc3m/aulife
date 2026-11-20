@@ -1,0 +1,51 @@
+Glosario de Inteligencia Artificial
+
+Agente de IA: Sistema de IA capaz de percibir su entorno, tomar decisiones y ejecutar acciones de forma autonoma para alcanzar un objetivo.
+Alucinacion (hallucination): Informacion inventada que un modelo de lenguaje genera con aparente seguridad pero que es factualmente incorrecta.
+Aprendizaje automatico (machine learning): Rama de la IA en la que los sistemas aprenden patrones a partir de datos sin ser programados explicitamente para cada tarea.
+Aprendizaje no supervisado: Tecnica de aprendizaje donde el modelo encuentra patrones en datos sin etiquetas, como agrupaciones (clustering) o reducciones de dimensionalidad.
+Aprendizaje por refuerzo (reinforcement learning): Paradigma donde un agente aprende a tomar decisiones mediante prueba y error, recibiendo recompensas o penalizaciones por sus acciones.
+Aprendizaje profundo (deep learning): Subcampo del aprendizaje automatico que usa redes neuronales con muchas capas (profundas) para aprender representaciones jerarquicas de los datos.
+Aprendizaje supervisado: Tecnica de aprendizaje donde el modelo se entrena con pares de entrada-salida etiquetados, aprendiendo a predecir la salida para nuevas entradas.
+Atencion (attention): Mecanismo que permite a un modelo asignar diferente importancia a diferentes partes de la entrada, fundamental en la arquitectura Transformer.
+Autoatencion (self-attention): Variante del mecanismo de atencion donde cada elemento de una secuencia atiende a todos los demas elementos de la misma secuencia.
+Backpropagation (retropropagacion): Algoritmo para calcular los gradientes de la funcion de perdida respecto a cada peso de la red, utilizado para entrenar redes neuronales mediante descenso de gradiente.
+Batch (lote): Subconjunto de los datos de entrenamiento procesado en una unica iteracion del algoritmo de optimizacion.
+BERT: Modelo de lenguaje de Google basado en Transformer que procesa texto bidireccionalmente, preentrenado mediante masked language modeling.
+Capa oculta: Capa intermedia de una red neuronal, entre la entrada y la salida, que aprende representaciones internas de los datos.
+Clasificacion: Tarea de asignar una entrada a una de varias categorias predefinidas (por ejemplo, spam o no spam).
+CNN (Red Neuronal Convolucional): Tipo de red neuronal disenada para procesar datos con estructura espacial (imagenes), usando filtros que detectan patrones locales.
+Conjunto de entrenamiento: Porcion de los datos utilizada para ajustar los parametros del modelo.
+Conjunto de validacion: Datos separados del entrenamiento usados para evaluar el rendimiento durante el desarrollo y ajustar hiperparametros.
+Descenso de gradiente: Algoritmo de optimizacion que ajusta iterativamente los parametros del modelo en la direccion que reduce la funcion de perdida.
+Dropout: Tecnica de regularizacion que desactiva aleatoriamente neuronas durante el entrenamiento para prevenir el sobreajuste.
+Embedding: Representacion vectorial densa de un elemento (palabra, frase, imagen) en un espacio de dimensiones reducidas donde elementos similares estan cerca.
+Epoch (epoca): Una pasada completa de todos los datos de entrenamiento a traves del modelo.
+Fine-tuning (ajuste fino): Proceso de adaptar un modelo preentrenado a una tarea especifica entrenandolo con datos adicionales de esa tarea.
+Funcion de activacion: Funcion matematica aplicada a la salida de cada neurona que introduce no linealidad en la red (por ejemplo, ReLU, sigmoide, tanh).
+Funcion de perdida (loss function): Funcion que mide la diferencia entre las predicciones del modelo y los valores reales, guiando el proceso de optimizacion.
+GPT (Generative Pre-trained Transformer): Familia de modelos de lenguaje de OpenAI entrenados para generar texto prediciendo el siguiente token.
+Hiperparametro: Parametro de configuracion del proceso de entrenamiento que no se aprende de los datos (tasa de aprendizaje, numero de capas, tamano del batch).
+IA generativa: Sistemas de IA capaces de crear nuevo contenido (texto, imagenes, audio, video, codigo) que no existia en los datos de entrenamiento.
+Inferencia: Proceso de usar un modelo ya entrenado para hacer predicciones sobre datos nuevos.
+LLM (Large Language Model): Modelo de lenguaje de gran tamano, tipicamente basado en Transformer, entrenado con cantidades masivas de texto.
+LSTM (Long Short-Term Memory): Tipo de red neuronal recurrente que usa compuertas para controlar el flujo de informacion, capaz de aprender dependencias a largo plazo en secuencias.
+Modelo de lenguaje: Sistema que asigna probabilidades a secuencias de palabras, capaz de predecir la siguiente palabra dado un contexto.
+Modelo fundacional (foundation model): Modelo de gran escala preentrenado en datos diversos que puede adaptarse a multiples tareas mediante fine-tuning o prompting.
+Multimodal: Modelo capaz de procesar y generar multiples tipos de datos (texto, imagen, audio, video) de forma integrada.
+Overfitting (sobreajuste): Situacion donde el modelo memoriza los datos de entrenamiento y pierde capacidad de generalizar a datos nuevos.
+Parametro: Valor interno del modelo que se ajusta durante el entrenamiento (pesos y sesgos de las neuronas).
+Perceptron: Unidad basica de una red neuronal: recibe entradas ponderadas, las suma y aplica una funcion de activacion.
+Prompt: Texto de entrada proporcionado a un modelo de lenguaje para obtener una respuesta o completar una tarea.
+Prompt engineering: Tecnica de disenar y optimizar los prompts para obtener mejores resultados de un modelo de lenguaje.
+RAG (Retrieval-Augmented Generation): Tecnica que combina la generacion de texto con la recuperacion de informacion de una base de conocimiento externa, reduciendo alucinaciones.
+Red neuronal recurrente (RNN): Tipo de red neuronal donde las conexiones forman ciclos, permitiendo procesar secuencias y mantener memoria de pasos anteriores.
+Regresion: Tarea de predecir un valor numerico continuo a partir de variables de entrada.
+ReLU (Rectified Linear Unit): Funcion de activacion f(x) = max(0, x), ampliamente usada por su simplicidad y eficacia en redes profundas.
+Tasa de aprendizaje (learning rate): Hiperparametro que controla el tamano del paso en cada actualizacion de los pesos durante el entrenamiento.
+Temperatura: Parametro que controla la aleatoriedad de las respuestas de un modelo de lenguaje: valores bajos producen respuestas mas deterministas, valores altos mas creativas.
+Token: Unidad basica de texto que procesa un modelo de lenguaje; puede ser una palabra, parte de una palabra o un caracter especial.
+Tokenizacion: Proceso de dividir un texto en tokens que el modelo puede procesar.
+Transfer learning: Tecnica de reutilizar un modelo preentrenado en una tarea general para resolver una tarea especifica diferente.
+Transformer: Arquitectura de red neuronal basada en mecanismos de atencion, sin recurrencia ni convolucion, que procesa secuencias en paralelo. Base de los modelos de lenguaje modernos.
+Underfitting (subajuste): Situacion donde el modelo es demasiado simple para capturar los patrones de los datos y rinde mal tanto en entrenamiento como en evaluacion.

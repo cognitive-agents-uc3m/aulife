@@ -1,0 +1,73 @@
+Historia de la Inteligencia Artificial
+
+1. Los origenes: la pregunta fundamental
+
+La idea de crear maquinas capaces de pensar es tan antigua como la propia civilizacion. Desde los automatas mecanicos del siglo XVIII hasta las reflexiones filosoficas sobre la naturaleza de la mente, la humanidad ha explorado la posibilidad de replicar la inteligencia en artefactos artificiales. Sin embargo, la inteligencia artificial como disciplina cientifica tiene un punto de partida concreto en el siglo XX.
+
+En 1936, Alan Turing publico su articulo seminal "On Computable Numbers", donde definio el concepto de maquina universal capaz de ejecutar cualquier calculo descrito mediante un algoritmo. Este trabajo sento las bases teoricas de la computacion moderna. En 1950, Turing fue mas alla con su celebre articulo "Computing Machinery and Intelligence", donde propuso lo que hoy conocemos como el Test de Turing: si una maquina puede mantener una conversacion indistinguible de la de un humano, deberiamos considerarla inteligente. Esta pregunta, aparentemente sencilla, impulso decadas de investigacion.
+
+Paralelamente, Warren McCulloch y Walter Pitts publicaron en 1943 un modelo matematico de neuronas artificiales, demostrando que redes de unidades simples podian, en principio, computar cualquier funcion logica. Este trabajo abrio la puerta a la idea de construir inteligencia a partir de componentes simples inspirados en el cerebro.
+
+2. El nacimiento oficial: Dartmouth 1956
+
+El verano de 1956 marca el nacimiento formal de la inteligencia artificial. John McCarthy, Marvin Minsky, Nathaniel Rochester y Claude Shannon organizaron un taller en el Dartmouth College con una propuesta audaz: "cada aspecto del aprendizaje o cualquier otra caracteristica de la inteligencia puede, en principio, describirse con tal precision que se puede construir una maquina para simularlo". En este taller se acuno el termino "inteligencia artificial" y se establecio como campo de investigacion independiente.
+
+Los participantes compartian un optimismo extraordinario. Herbert Simon predijo que en diez anos una maquina seria campeon de ajedrez y descubriria teoremas matematicos importantes. Aunque estas predicciones resultaron prematuras, el entusiasmo genero una oleada de financiacion y avances iniciales.
+
+3. La era de la IA simbolica (1956-1974)
+
+Los primeros programas de IA fueron notablemente exitosos dentro de dominios limitados. El Logic Theorist de Newell y Simon demostro teoremas de logica matematica. ELIZA, creado por Joseph Weizenbaum en el MIT en 1966, simulo un psicoterapeuta mediante reglas de manipulacion de texto, sorprendiendo a los usuarios por su aparente comprension.
+
+El enfoque dominante de esta epoca fue la IA simbolica: representar el conocimiento mediante simbolos y reglas logicas, y usar busqueda y razonamiento formal para resolver problemas. Los investigadores crearon programas que resolvian puzzles, jugaban a las damas y traducian (con limitaciones) entre idiomas.
+
+Sin embargo, los problemas reales resultaron mucho mas dificiles de lo esperado. La traduccion automatica, uno de los primeros campos de aplicacion, produjo resultados desastrosos. El informe ALPAC de 1966 concluyo que la traduccion automatica no era viable a corto plazo, recortando drasticamente la financiacion.
+
+4. El primer invierno de la IA (1974-1980)
+
+Las promesas incumplidas tuvieron consecuencias. El informe Lighthill de 1973, encargado por el gobierno britanico, fue devastador: concluyo que la IA habia fracasado en alcanzar sus ambiciosos objetivos. La financiacion gubernamental se redujo drasticamente tanto en Estados Unidos como en el Reino Unido. Los investigadores evitaban incluso usar el termino "inteligencia artificial", prefiriendo denominaciones como "informatica avanzada" o "sistemas basados en conocimiento".
+
+5. Los sistemas expertos y la segunda oleada (1980-1987)
+
+La IA resurgio gracias a los sistemas expertos: programas que codificaban el conocimiento de especialistas humanos en forma de reglas if-then. MYCIN, desarrollado en Stanford, diagnosticaba infecciones bacterianas con una precision comparable a la de medicos especialistas. XCON, utilizado por Digital Equipment Corporation, configuraba pedidos de ordenadores, ahorrando millones de dolares anuales.
+
+El exito comercial de los sistemas expertos genero una nueva fiebre inversora. Japon lanzo el ambicioso proyecto de Quinta Generacion en 1982, y gobiernos de todo el mundo respondieron con programas similares. La industria de la IA alcanzo miles de millones de dolares en valor de mercado.
+
+6. El segundo invierno (1987-1993)
+
+Pero los sistemas expertos tenian limitaciones fundamentales: eran fragiles, costosos de mantener y no podian aprender de la experiencia. Cuando el hardware especializado (maquinas Lisp) fue superado por estaciones de trabajo genericas mas baratas, la burbuja estallo. El proyecto japones de Quinta Generacion no alcanzo sus objetivos. Nuevamente, la financiacion y el interes se desplomaron.
+
+7. El resurgimiento de las redes neuronales (1986-2000)
+
+Mientras la IA simbolica dominaba, un grupo de investigadores persistio en un enfoque alternativo: las redes neuronales artificiales. En 1986, David Rumelhart, Geoffrey Hinton y Ronald Williams popularizaron el algoritmo de retropropagacion (backpropagation), que permitia entrenar redes neuronales multicapa ajustando sistematicamente los pesos de las conexiones.
+
+Este avance fue fundamental, pero las redes neuronales de la epoca tenian limitaciones practicas: los ordenadores eran demasiado lentos, los datos disponibles eran escasos y las redes profundas eran dificiles de entrenar. Yann LeCun demostro el potencial con LeNet, una red convolucional capaz de reconocer digitos escritos a mano, utilizada comercialmente por bancos para leer cheques.
+
+Durante los anos 90, la IA adopto un enfoque mas pragmatico, incorporando metodos estadisticos y probabilisticos. Las maquinas de vectores de soporte (SVM), los arboles de decision y los metodos bayesianos dominaron el panorama del aprendizaje automatico. En 1997, Deep Blue de IBM derroto al campeon mundial de ajedrez Garry Kasparov, demostrando que las maquinas podian superar a los humanos en dominios especificos.
+
+8. La revolucion del aprendizaje profundo (2006-2015)
+
+Geoffrey Hinton y su equipo demostraron en 2006 que las redes neuronales profundas (con muchas capas) podian entrenarse eficazmente mediante preentrenamiento no supervisado. Pero el verdadero punto de inflexion llego en 2012: la red AlexNet, disenada por Alex Krizhevsky bajo la supervision de Hinton, gano la competicion ImageNet de reconocimiento visual con un margen aplastante, reduciendo la tasa de error a la mitad respecto al mejor sistema anterior.
+
+Tres factores convergieron para hacer posible esta revolucion: cantidades masivas de datos disponibles en internet, potencia computacional gracias a las GPUs (originalmente disenadas para videojuegos) y avances algoritmicos como las funciones de activacion ReLU, la normalizacion por lotes y las tecnicas de regularizacion como el dropout.
+
+El aprendizaje profundo se extendio rapidamente a todos los dominios: reconocimiento de voz (permitiendo asistentes como Siri y Alexa), traduccion automatica (superando por fin las barreras de los 60), conduccion autonoma, diagnostico medico y generacion de contenido.
+
+9. La era de los Transformers y los modelos de lenguaje (2017-presente)
+
+En 2017, investigadores de Google publicaron el articulo "Attention Is All You Need", presentando la arquitectura Transformer. Esta arquitectura, basada enteramente en mecanismos de atencion, revoluciono el procesamiento del lenguaje natural al permitir el procesamiento paralelo de secuencias completas.
+
+BERT (Bidirectional Encoder Representations from Transformers), publicado por Google en 2018, demostro que un modelo preentrenado en grandes cantidades de texto podia adaptarse a multiples tareas linguisticas con un rendimiento sin precedentes.
+
+La serie GPT (Generative Pre-trained Transformer) de OpenAI llevo este enfoque al extremo del escalado. GPT-2 (2019) genero textos sorprendentemente coherentes. GPT-3 (2020), con 175 mil millones de parametros, demostro capacidades emergentes: podia realizar tareas para las que no habia sido especificamente entrenado, simplemente a partir de ejemplos en el prompt.
+
+En noviembre de 2022, el lanzamiento de ChatGPT marco un antes y un despues en la percepcion publica de la IA. Por primera vez, millones de personas interactuaron directamente con un modelo de lenguaje avanzado. En pocos meses, ChatGPT alcanzo mas de cien millones de usuarios.
+
+10. El estado actual y el futuro
+
+La IA en 2026 se caracteriza por la proliferacion de modelos fundacionales cada vez mas capaces, la competicion global entre empresas y naciones, y un debate social intenso sobre regulacion, etica y el impacto en el empleo.
+
+Los modelos multimodales procesan texto, imagenes, audio y video de forma integrada. Los agentes de IA pueden ejecutar tareas complejas interactuando con herramientas y servicios externos. La Union Europea ha implementado el AI Act, la primera legislacion integral sobre inteligencia artificial.
+
+Al mismo tiempo, persisten desafios fundamentales: el consumo energetico de los grandes modelos, las alucinaciones (informacion inventada presentada como factual), los sesgos heredados de los datos de entrenamiento, y la concentracion del desarrollo en un numero reducido de empresas con los recursos necesarios para entrenar modelos a gran escala.
+
+La historia de la IA es una historia de ciclos de optimismo y decepcion, de promesas ambiciosas y resultados inesperados. Lo que distingue la era actual es que, por primera vez, la IA ha dejado de ser un tema exclusivamente academico para convertirse en una tecnologia que afecta directamente a la vida cotidiana de miles de millones de personas.
